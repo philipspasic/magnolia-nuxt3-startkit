@@ -1,7 +1,0 @@
-label: Paragraph
-form:
-  properties:
-    richText:
-      label: Paragraph Text
-      $type: richTextField
-      i18n: true

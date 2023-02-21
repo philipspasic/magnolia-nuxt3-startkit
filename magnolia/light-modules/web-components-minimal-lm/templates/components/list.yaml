@@ -1,9 +1,0 @@
-title: List
-renderType: freemarker
-templateScript: /web-components-minimal-lm/templates/components/list.ftl
-areas:
-  items:
-    title: List Items Area
-    availableComponents:
-      Item:
-        id: web-components-minimal-lm:components/listItem

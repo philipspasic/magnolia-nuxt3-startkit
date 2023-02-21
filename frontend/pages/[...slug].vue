@@ -9,26 +9,22 @@
 
 <script>
 import { EditablePage } from "@magnolia/vue-editor";
+
 import Basic from "../templates/pages/Basic.vue";
-import Contact from "../templates/pages/Contact.vue";
-import Headline from "../templates/components/Headline.vue";
-import Image from "../templates/components/Image.vue";
-import Paragraph from "../templates/components/Paragraph.vue";
-import List from "../templates/components/List.vue";
-import Item from "../templates/components/Item.vue";
-import Expander from "../templates/components/Expander.vue";
+import Header from "../templates/components/Header.vue";
+import Footer from "../templates/components/Footer.vue";
+import Cover from "../templates/components/Cover.vue";
+import TextAndImage from "../templates/components/TextAndImage.vue";
 
 const config = {
   componentMappings: {
     "app-lm:pages/basic": Basic,
-    "app-lm:pages/contact": Contact,
+    "app-lm:pages/index": Basic,
 
-    "spa-lm:components/headline": Headline,
-    "spa-lm:components/image": Image,
-    "spa-lm:components/paragraph": Paragraph,
-    "spa-lm:components/list": List,
-    "spa-lm:components/listItem": Item,
-    "spa-lm:components/expander": Expander,
+    "app-lm:components/header": Header,
+    "app-lm:components/footer": Footer,
+    "app-lm:components/text-and-image": TextAndImage,
+    "app-lm:components/cover": Cover
   },
 };
 

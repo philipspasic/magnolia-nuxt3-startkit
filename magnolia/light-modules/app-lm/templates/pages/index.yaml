@@ -1,0 +1,31 @@
+title: 'Index Layout'
+baseUrl: http://localhost:3000
+routeTemplate: '/{language}{{@path}}'
+# templateScript: /app-lm/webresources/dist/index.html
+
+dialog: app-lm:pages/index
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+areas:
+  header:
+    title: Header Area
+    type: single
+    availableComponents:
+      Header:
+        id: app-lm:components/header
+
+  main:
+    title: Main Area
+    availableComponents:
+      Cover:
+        id: app-lm:components/cover
+      TextAndImage:
+        id: app-lm:components/text-and-image
+
+  footer:
+    title: Footer Area
+    type: single
+    availableComponents:
+      Footer:
+        id: app-lm:components/footer

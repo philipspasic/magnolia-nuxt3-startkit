@@ -1,0 +1,37 @@
+label: Cover
+form:
+  properties:
+    layout:
+      label: Layout
+      $type: comboBoxField
+      defaultValue: page
+      datasource:
+        $type: optionListDatasource
+        options: 
+          - name: page
+            label: Page cover
+            value: page
+          - name: hero
+            label: Hero cover
+            value: hero
+
+    headline:
+      label: Headline
+      $type: textField
+      i18n: true
+
+    content:
+      label: Content
+      $type: richTextField
+      height: 200
+      source: true
+      i18n: true
+
+    image:
+      label: Image
+      $type: linkField
+      chooser:
+        workbenchChooser:
+          appName: dam-chooser
+    
+    

@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   app: {
     // Global page headers: https://v3.nuxtjs.org/api/configuration/nuxt.config#head
     head: {
-      title: "app",
+      title: "Magnolia Nuxt3 Startkit",
       htmlAttrs: {
         lang: "en",
       },
@@ -41,8 +41,7 @@ export default defineNuxtConfig({
 
   alias: {
     "@magnolia/vue-editor": "@magnolia/vue-editor/src/main.js",
-    "@magnolia/template-annotations":
-      "@magnolia/template-annotations/src/index.js",
+    "@magnolia/template-annotations": "@magnolia/template-annotations/src/index.js",
   },
 
   // Set nuxt to generate static files

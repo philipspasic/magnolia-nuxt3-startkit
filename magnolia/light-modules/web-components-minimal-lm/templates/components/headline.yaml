@@ -1,3 +1,0 @@
-!include:/spa-lm/templates/components/headline.yaml
-renderType: freemarker
-templateScript: /web-components-minimal-lm/templates/components/headline.ftl

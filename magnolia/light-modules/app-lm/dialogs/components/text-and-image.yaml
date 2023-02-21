@@ -1,0 +1,58 @@
+label: Text and Image
+form:
+  properties:
+    layout:
+      label: Layout
+      $type: switchableField
+      field:
+        $type: comboBoxField
+        defaultValue: two-column
+        datasource:
+          $type: optionListDatasource
+          options: 
+            - name: one-column
+              label: One column
+              value: one-column
+            - name: two-column
+              label: Two column
+              value: two-column
+      itemProvider:
+        $type: jcrChildNodeProvider
+      forms:
+        - name: two-column
+          properties:
+            orientation:
+              label: Orientation
+              $type: radioButtonGroupField
+              layout: horizontal
+              defaultValue: left
+              datasource:
+                $type: optionListDatasource
+                options: 
+                  - name: left
+                    label: Text left
+                    value: left
+                  - name: right
+                    label: Text right
+                    value: right
+
+    headline:
+      label: Headline
+      $type: textField
+      i18n: true
+
+    content:
+      label: Content
+      $type: richTextField
+      height: 200
+      source: true
+      i18n: true
+
+    image:
+      label: Image
+      $type: linkField
+      chooser:
+        workbenchChooser:
+          appName: dam-chooser
+    
+    

@@ -1,7 +1,0 @@
-label: List Item
-form:
-  properties:
-    text:
-      label: Item Text
-      $type: textField
-      i18n: true

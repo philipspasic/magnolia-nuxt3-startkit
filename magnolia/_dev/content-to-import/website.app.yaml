@@ -34,7 +34,7 @@
       'mgnl:lastActivatedBy': 'superuser'
       'mgnl:lastModified': 2022-07-27T09:44:11.491+02:00
       'mgnl:lastModifiedBy': 'superuser'
-      'mgnl:template': 'spa-lm:components/image'
+      'mgnl:template': 'app-lm:components/image'
     '00':
       'jcr:primaryType': 'mgnl:component'
       'jcr:uuid': '96f568cd-e808-4183-8a12-871fbb2a5121'
@@ -45,7 +45,7 @@
       'mgnl:lastActivatedBy': 'superuser'
       'mgnl:lastModified': 2022-07-27T09:44:34.434+02:00
       'mgnl:lastModifiedBy': 'superuser'
-      'mgnl:template': 'spa-lm:components/paragraph'
+      'mgnl:template': 'app-lm:components/paragraph'
       'richText': '<p>Ahhhhh,&nbsp;<strong><em>springtime</em></strong>.</p>
 
 
@@ -73,7 +73,7 @@
       'mgnl:lastActivatedBy': 'superuser'
       'mgnl:lastModified': 2022-07-27T09:44:44.007+02:00
       'mgnl:lastModifiedBy': 'superuser'
-      'mgnl:template': 'spa-lm:components/headline'
+      'mgnl:template': 'app-lm:components/headline'
       'text': 'Spring Essentials'
     '00':
       'jcr:primaryType': 'mgnl:component'
@@ -85,7 +85,7 @@
       'mgnl:lastActivatedBy': 'superuser'
       'mgnl:lastModified': 2022-07-27T09:45:13.447+02:00
       'mgnl:lastModifiedBy': 'superuser'
-      'mgnl:template': 'spa-lm:components/list'
+      'mgnl:template': 'app-lm:components/list'
       'items':
         'jcr:primaryType': 'mgnl:area'
         'jcr:uuid': '2e881055-ddd8-46cc-80c6-dc50de4a9ac3'
@@ -106,7 +106,7 @@
           'mgnl:lastActivatedBy': 'superuser'
           'mgnl:lastModified': 2022-07-27T09:44:59.826+02:00
           'mgnl:lastModifiedBy': 'superuser'
-          'mgnl:template': 'spa-lm:components/listItem'
+          'mgnl:template': 'app-lm:components/listItem'
           'text': 'Put ski''s in storage'
         '00':
           'jcr:primaryType': 'mgnl:component'
@@ -118,7 +118,7 @@
           'mgnl:lastActivatedBy': 'superuser'
           'mgnl:lastModified': 2022-07-27T09:45:07.229+02:00
           'mgnl:lastModifiedBy': 'superuser'
-          'mgnl:template': 'spa-lm:components/listItem'
+          'mgnl:template': 'app-lm:components/listItem'
           'text': 'Get grill on balcony'
         '01':
           'jcr:primaryType': 'mgnl:component'
@@ -130,7 +130,7 @@
           'mgnl:lastActivatedBy': 'superuser'
           'mgnl:lastModified': 2022-07-27T09:45:15.342+02:00
           'mgnl:lastModifiedBy': 'superuser'
-          'mgnl:template': 'spa-lm:components/listItem'
+          'mgnl:template': 'app-lm:components/listItem'
           'text': 'Buy beer'
     '01':
       'jcr:primaryType': 'mgnl:component'
@@ -142,7 +142,7 @@
       'mgnl:lastActivatedBy': 'superuser'
       'mgnl:lastModified': 2022-07-27T09:45:24.689+02:00
       'mgnl:lastModifiedBy': 'superuser'
-      'mgnl:template': 'spa-lm:components/paragraph'
+      'mgnl:template': 'app-lm:components/paragraph'
       'richText': '<p>It&#39;s all about&nbsp;<em>priorities</em>.</p>
 
         '
@@ -181,7 +181,7 @@
         'mgnl:lastActivatedBy': 'superuser'
         'mgnl:lastModified': 2022-07-27T09:47:59.683+02:00
         'mgnl:lastModifiedBy': 'superuser'
-        'mgnl:template': 'spa-lm:components/paragraph'
+        'mgnl:template': 'app-lm:components/paragraph'
         'richText': '<p><strong>Contact Sales</strong></p>
 
           '
@@ -195,7 +195,7 @@
         'mgnl:lastActivatedBy': 'superuser'
         'mgnl:lastModified': 2022-07-27T09:52:15.425+02:00
         'mgnl:lastModifiedBy': 'superuser'
-        'mgnl:template': 'spa-lm:components/expander'
+        'mgnl:template': 'app-lm:components/expander'
         'expanderItems':
           'jcr:primaryType': 'mgnl:area'
           'jcr:uuid': '9ea32a4e-6337-4d73-9451-2beb9f6bb66f'
@@ -216,7 +216,7 @@
             'mgnl:lastActivatedBy': 'superuser'
             'mgnl:lastModified': 2022-07-27T09:52:22.996+02:00
             'mgnl:lastModifiedBy': 'superuser'
-            'mgnl:template': 'spa-lm:components/paragraph'
+            'mgnl:template': 'app-lm:components/paragraph'
             'richText': '<p>Reach out to us anytime, 24/7. Really. Go ahead, just
               call us!&nbsp;<em>Please?</em></p>
 
@@ -237,7 +237,7 @@
         'mgnl:lastActivatedBy': 'superuser'
         'mgnl:lastModified': 2022-07-27T09:52:35.223+02:00
         'mgnl:lastModifiedBy': 'superuser'
-        'mgnl:template': 'spa-lm:components/paragraph'
+        'mgnl:template': 'app-lm:components/paragraph'
         'richText': '<p><strong>Contact Support</strong></p>
 
           '
@@ -251,7 +251,7 @@
         'mgnl:lastActivatedBy': 'superuser'
         'mgnl:lastModified': 2022-07-27T09:52:45.334+02:00
         'mgnl:lastModifiedBy': 'superuser'
-        'mgnl:template': 'spa-lm:components/expander'
+        'mgnl:template': 'app-lm:components/expander'
         'expanderItems':
           'jcr:primaryType': 'mgnl:area'
           'jcr:uuid': '4476e39a-ff07-469a-a1c3-a1c0e5e84536'
@@ -272,7 +272,7 @@
             'mgnl:lastActivatedBy': 'superuser'
             'mgnl:lastModified': 2022-07-27T09:52:50.532+02:00
             'mgnl:lastModifiedBy': 'superuser'
-            'mgnl:template': 'spa-lm:components/paragraph'
+            'mgnl:template': 'app-lm:components/paragraph'
             'richText': '<p>Available from 3:00 - 3:25. Every 2nd Tuesday of the month.</p>
 
 
