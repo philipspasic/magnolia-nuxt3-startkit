@@ -33,13 +33,7 @@ const config = {
 };
 
 function getCurrentLanguage(url, languages) {
-  for (let i = 0; i < languages.length; i++) {
-    const language = languages[i];
-
-    if (url.indexOf("/" + language) > -1) return language;
-  }
-
-  return languages[0];
+  return languages.find(language => url.indexOf("/" + language) > -1) || languages[0];
 }
 
 function setURLSearchParams(url, param) {
