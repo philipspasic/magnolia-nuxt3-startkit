@@ -1,0 +1,3 @@
+!include:/spa-lm/templates/components/image.yaml
+renderType: freemarker
+templateScript: /web-components-minimal-lm/templates/components/image.ftl

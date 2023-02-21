@@ -1,0 +1,28 @@
+title: 'Basic'
+baseUrl: http://localhost:3000
+routeTemplate: '/{language}{{@path}}'
+
+dialog: spa-lm:pages/basic
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+areas:
+  main:
+    title: Main Area
+    availableComponents:
+      Headline:
+        id: spa-lm:components/headline
+      Image:
+        id: spa-lm:components/image
+      Paragraph:
+        id: spa-lm:components/paragraph
+      List:
+        id: spa-lm:components/list
+  extras:
+    title: Extras Area
+    availableComponents:
+      Headline:
+        id: spa-lm:components/headline
+      Paragraph:
+        id: spa-lm:components/paragraph
+      List:
+        id: spa-lm:components/list

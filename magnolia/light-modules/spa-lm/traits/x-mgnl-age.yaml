@@ -1,0 +1,21 @@
+$type: headerTrait
+ruleField: 
+  $type: comboBoxField
+  name: value
+  label: Age (Minimal headless demo)
+  datasource: &datasource
+    $type: optionListDatasource
+    options:
+      - name: child
+        value: Child
+        label: Child
+      - name: adult
+        value: Adult
+        label: Adult
+      - name: senior
+        value: Senior
+        label: Senior
+valueField:
+  $type: comboBoxField
+  label: Age
+  datasource: *datasource

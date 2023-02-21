@@ -1,0 +1,7 @@
+title: List
+areas:
+  items:
+    title: List Items Area
+    availableComponents:
+      Item:
+        id: spa-lm:components/listItem

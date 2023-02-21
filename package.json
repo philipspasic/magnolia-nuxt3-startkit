@@ -1,0 +1,11 @@
+{
+  "name": "magnolia-cms-startkit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "mgnl": "cd magnolia && mgnl start",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run start"
+  }
+}

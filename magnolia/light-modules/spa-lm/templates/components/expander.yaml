@@ -1,0 +1,13 @@
+title: Expander
+areas:
+  expanderItems:
+    title: Expander Area
+
+    availableComponents:
+      Image:
+        id: spa-lm:components/image
+      Paragraph:
+        id: spa-lm:components/paragraph
+      Headline:
+        id: spa-lm:components/headline
+

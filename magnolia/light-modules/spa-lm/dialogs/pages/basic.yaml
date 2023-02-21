@@ -1,0 +1,7 @@
+label: Page Properties
+form:
+  properties:
+    title:
+      label: Title
+      $type: textField
+      i18n: true

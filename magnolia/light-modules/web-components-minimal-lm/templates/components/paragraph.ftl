@@ -1,0 +1,1 @@
+<wc-paragraph richText="${content.richText!}"></wc-paragraph>
