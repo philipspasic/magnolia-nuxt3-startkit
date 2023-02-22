@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       MGNL_HOST: process.env.MGNL_HOST,
       MGNL_API_PAGES: process.env.MGNL_API_PAGES,
       MGNL_API_TEMPLATES: process.env.MGNL_API_TEMPLATES,
-      NUXT_APP_MGNL_SITE_PATH: process.env.NUXT_APP_MGNL_SITE_PATH,
+      NUXT_APP_MGNL_SITE: process.env.NUXT_APP_MGNL_SITE,
       NUXT_APP_MGNL_LANGUAGES: process.env.NUXT_APP_MGNL_LANGUAGES,
     },
   },
@@ -38,6 +38,10 @@ export default defineNuxtConfig({
   build: {
     transpile: ["@magnolia/vue-editor", "@magnolia/template-annotations"],
   },
+
+  modules: [
+    '@pinia/nuxt'
+  ],
 
   alias: {
     "@magnolia/vue-editor": "@magnolia/vue-editor/src/main.js",

@@ -1,32 +1,19 @@
 <template>
-  <EditablePage
-    v-if="content"
-    v-bind:content="content"
-    v-bind:config="config"
-    v-bind:templateAnnotations="templateAnnotations"
-  />
+  <div>
+    <EditablePage
+      v-if="content"
+      :content="content"
+      :config="config"
+      :templateAnnotations="templateAnnotations"
+    />
+  </div>
 </template>
 
 <script>
 import { EditablePage } from "@magnolia/vue-editor";
-
-import Basic from "../templates/pages/Basic.vue";
-import Header from "../templates/components/Header.vue";
-import Footer from "../templates/components/Footer.vue";
-import Cover from "../templates/components/Cover.vue";
-import TextAndImage from "../templates/components/TextAndImage.vue";
-
-const config = {
-  componentMappings: {
-    "app-lm:pages/basic": Basic,
-    "app-lm:pages/index": Basic,
-
-    "app-lm:components/header": Header,
-    "app-lm:components/footer": Footer,
-    "app-lm:components/text-and-image": TextAndImage,
-    "app-lm:components/cover": Cover
-  },
-};
+import { useAppStore } from "@/store/app";
+import config from "@/config/magnolia.config";
+import { createCompilerError } from "@vue/compiler-core";
 
 function getCurrentLanguage(url, languages) {
   return languages.find(language => url.indexOf("/" + language) > -1) || languages[0];
@@ -37,7 +24,7 @@ function setURLSearchParams(url, param) {
 }
 
 export default {
-  name: "IndexPage",
+  name: "Page",
   components: {
     EditablePage,
   },
@@ -51,9 +38,10 @@ export default {
   async setup() {
     const runtimeConfig = useRuntimeConfig();
     const fullPath = useRoute().fullPath;
+    const appStore = useAppStore();
 
     // Load paths, see .env and nuxt.config.js files
-    const nodeName = runtimeConfig.NUXT_APP_MGNL_SITE_PATH;
+    const nodeName = "/" + runtimeConfig.NUXT_APP_MGNL_SITE;
     const languages = runtimeConfig.NUXT_APP_MGNL_LANGUAGES.split(" ");
     const pagesApi = runtimeConfig.MGNL_API_PAGES;
     const templateAnnotationsApi = runtimeConfig.MGNL_API_TEMPLATES;
@@ -63,13 +51,33 @@ export default {
     let pagePath = nodeName + fullPath.replace(new RegExp(".*" + nodeName), "");
 
     const { data: content } = await useAsyncData(fullPath, async () => {
+      if(fullPath !== "/" && !appStore.sharedContent) {
+        const path = nodeName + "/";
+        if (!isDefaultLanguage) {
+          path = path.replace("/" + currentLanguage, "");
+        }
+        const indexPage = await $fetch(
+          setURLSearchParams(pagesApi + path, "lang=" + currentLanguage)
+        );
+
+        appStore.$patch({sharedContent: {
+          header: indexPage.header,
+          footer: indexPage.footer
+        }});
+      }
+
       if (!isDefaultLanguage) {
         pagePath = pagePath.replace("/" + currentLanguage, "");
       }
+
       return $fetch(
         setURLSearchParams(pagesApi + pagePath, "lang=" + currentLanguage)
       );
     });
+
+    if(!content.value) {
+      throw createError({ statusCode: 404, statusMessage: "Page Not Found" });
+    }
 
     return { content, pagePath, templateAnnotationsApi };
   },
