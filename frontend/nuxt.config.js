@@ -32,7 +32,9 @@ export default defineNuxtConfig({
   },
 
   // Global CSS: https://v3.nuxtjs.org/api/configuration/nuxt.config#css
-  css: ["~/assets/css/main.css"],
+  css: [
+    "~/assets/css/main.scss"
+  ],
 
   // Transpiling libraries: https://v3.nuxtjs.org/guide/going-further/esm#transpiling-libraries
   build: {
@@ -40,8 +42,19 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@pinia/nuxt'
+    "@pinia/nuxt",
+    "nuxt-uikit"
   ],
+
+  buildModules: [
+    "@nuxtjs/style-resources",
+  ],
+
+  styleResources: {
+    scss: [
+      "~/assets/css/global.scss",
+    ],
+  },
 
   alias: {
     "@magnolia/vue-editor": "@magnolia/vue-editor/src/main.js",

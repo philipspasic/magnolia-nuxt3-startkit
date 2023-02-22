@@ -13,7 +13,6 @@
 import { EditablePage } from "@magnolia/vue-editor";
 import { useAppStore } from "@/store/app";
 import config from "@/config/magnolia.config";
-import { createCompilerError } from "@vue/compiler-core";
 
 function getCurrentLanguage(url, languages) {
   return languages.find(language => url.indexOf("/" + language) > -1) || languages[0];
@@ -25,9 +24,11 @@ function setURLSearchParams(url, param) {
 
 export default {
   name: "Page",
+
   components: {
     EditablePage,
   },
+
   data() {
     return {
       content: null,
@@ -35,6 +36,7 @@ export default {
       config,
     };
   },
+
   async setup() {
     const runtimeConfig = useRuntimeConfig();
     const fullPath = useRoute().fullPath;
@@ -51,6 +53,7 @@ export default {
     let pagePath = nodeName + fullPath.replace(new RegExp(".*" + nodeName), "");
 
     const { data: content } = await useAsyncData(fullPath, async () => {
+      // Get header and footer from index page
       if(fullPath !== "/" && !appStore.sharedContent) {
         const path = nodeName + "/";
         if (!isDefaultLanguage) {
@@ -81,6 +84,7 @@ export default {
 
     return { content, pagePath, templateAnnotationsApi };
   },
+
   async mounted() {
     if (window.location.search.includes("mgnlPreview")) {
       const templateAnnotationsRes = await fetch(
@@ -88,6 +92,6 @@ export default {
       );
       this.templateAnnotations = await templateAnnotationsRes.json();
     }
-  },
+  }
 };
 </script>

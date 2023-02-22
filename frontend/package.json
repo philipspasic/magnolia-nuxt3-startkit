@@ -11,9 +11,13 @@
   "dependencies": {
     "@magnolia/template-annotations": "1.3.0",
     "@magnolia/vue-editor": "1.3.0",
+    "@nuxtjs/style-resources": "^1.2.1",
     "@pinia/nuxt": "^0.4.7",
-    "node-fetch": "3.2.8",
+    "node-fetch": "^3.3.0",
     "nuxt": "^3.2.2",
-    "pinia": "^2.0.32"
+    "nuxt-uikit": "^3.0.0-beta.16",
+    "pinia": "^2.0.32",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0"
   }
 }

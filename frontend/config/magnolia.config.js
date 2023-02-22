@@ -1,16 +1,17 @@
 import Basic from "../components/pages/Basic.vue";
-import Header from "../components/Header.vue";
-import Footer from "../components/Footer.vue";
-import Cover from "../components/Cover.vue";
-import TextAndImage from "../components/TextAndImage.vue";
+
+import PageHeader from "../components/layout/PageHeader.vue";
+import PageFooter from "../components/layout/PageFooter.vue";
+import Cover from "../components/Cover/Cover.vue";
+import TextAndImage from "../components/TextAndImage/TextAndImage.vue";
 
 const config = {
     componentMappings: {
         "app-lm:pages/basic": Basic,
         "app-lm:pages/index": Basic,
     
-        "app-lm:components/header": Header,
-        "app-lm:components/footer": Footer,
+        "app-lm:components/header": PageHeader,
+        "app-lm:components/footer": PageFooter,
         "app-lm:components/text-and-image": TextAndImage,
         "app-lm:components/cover": Cover
     }
