@@ -33,28 +33,22 @@ export default defineNuxtConfig({
 
   // Global CSS: https://v3.nuxtjs.org/api/configuration/nuxt.config#css
   css: [
-    "~/assets/css/main.scss"
+    "@mdi/font/css/materialdesignicons.min.css",
+    "vuetify/lib/styles/main.sass"
   ],
 
   // Transpiling libraries: https://v3.nuxtjs.org/guide/going-further/esm#transpiling-libraries
   build: {
-    transpile: ["@magnolia/vue-editor", "@magnolia/template-annotations"],
+    transpile: [
+      "vuetify",
+      "@magnolia/vue-editor", 
+      "@magnolia/template-annotations"
+    ]
   },
 
   modules: [
-    "@pinia/nuxt",
-    "nuxt-uikit"
+    "@pinia/nuxt"
   ],
-
-  buildModules: [
-    "@nuxtjs/style-resources",
-  ],
-
-  styleResources: {
-    scss: [
-      "~/assets/css/global.scss",
-    ],
-  },
 
   alias: {
     "@magnolia/vue-editor": "@magnolia/vue-editor/src/main.js",

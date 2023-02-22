@@ -1,7 +1,7 @@
-import Basic from "../components/pages/Basic.vue";
+import Basic from "../templates/pages/Basic.vue";
 
-import PageHeader from "../components/layout/PageHeader.vue";
-import PageFooter from "../components/layout/PageFooter.vue";
+import PageHeader from "../templates/layout/PageHeader.vue";
+import PageFooter from "../templates/layout/PageFooter.vue";
 import Cover from "../components/Cover/Cover.vue";
 import TextAndImage from "../components/TextAndImage/TextAndImage.vue";
 

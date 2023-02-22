@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Cover</h1>
-    <a class="uk-button uk-button-default" href="#">Link</a>
+    <v-btn prepend-icon="mdi-vuetify">
+      Button
+    </v-btn>
   </div>
 </template>
 
