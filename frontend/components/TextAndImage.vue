@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <section>
     <h1>Text and Image</h1>
-    <p v-if="layout.orientation">Orientation is: {{ layout.orientation }}</p>
-  </div>
+    <p>Orientation is: {{ orientation }}</p>
+  </section>
 </template>
 
 <script>
 export default {
   name: "Text and Image",
   props: [
-    "layout",
+    "orientation",
     "headline",
     "content",
     "image"

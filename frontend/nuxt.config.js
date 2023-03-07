@@ -1,5 +1,7 @@
 //Nuxt config page: https://v3.nuxtjs.org/api/configuration/nuxt.config
 import fetch from "node-fetch";
+import en from "./assets/translations/en";
+import de from "./assets/translations/de";
 
 export default defineNuxtConfig({
   // App configuration: https://v3.nuxtjs.org/api/configuration/nuxt.config#app
@@ -33,6 +35,7 @@ export default defineNuxtConfig({
 
   // Global CSS: https://v3.nuxtjs.org/api/configuration/nuxt.config#css
   css: [
+    "@/assets/css/main.scss",
     "@mdi/font/css/materialdesignicons.min.css",
     "vuetify/lib/styles/main.sass"
   ],
@@ -47,8 +50,18 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    "@nuxtjs/i18n",
     "@pinia/nuxt"
   ],
+
+  i18n: {
+    locales: ["en", "de"],
+    defaultLocale: "en",
+    vueI18n: {
+      fallbackLocale: "en",
+      messages: { en, de }
+    }
+  },
 
   alias: {
     "@magnolia/vue-editor": "@magnolia/vue-editor/src/main.js",
