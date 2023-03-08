@@ -37,6 +37,7 @@ export default {
   z-index: 2;
   height: 60vh;
   overflow: hidden;
+  margin-bottom: 5rem !important;
 
   .v-parallax, .v-img {
     position: absolute;

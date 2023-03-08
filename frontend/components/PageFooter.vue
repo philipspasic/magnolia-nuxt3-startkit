@@ -54,6 +54,6 @@ export default {
 
 <style lang="scss">
 .page-footer {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 </style>
