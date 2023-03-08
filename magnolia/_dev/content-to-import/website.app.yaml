@@ -1,284 +1,121 @@
 'app':
-  'jcr:mixinTypes': ['mgnl:hasVersion']
   'jcr:primaryType': 'mgnl:page'
-  'jcr:uuid': '3bddc370-2df0-4550-ab65-6426630870ec'
-  'mgnl:activationStatus': true
-  'mgnl:created': 2022-07-27T09:42:37.357+02:00
+  'jcr:uuid': '2fb4aa82-ba9f-455a-9947-3b43a3343943'
+  'mgnl:created': 2023-02-21T23:36:59.224+01:00
   'mgnl:createdBy': 'superuser'
-  'mgnl:lastActivated': 2022-07-27T10:00:52.828+02:00
-  'mgnl:lastActivatedBy': 'superuser'
-  'mgnl:lastActivatedVersion': '1.0'
-  'mgnl:lastActivatedVersionCreated': 2022-07-27T10:00:42.230+02:00
-  'mgnl:lastModified': 2022-07-27T10:00:27.266+02:00
+  'mgnl:lastModified': 2023-03-07T15:53:16.259+01:00
   'mgnl:lastModifiedBy': 'superuser'
-  'mgnl:template': 'app-lm:pages/basic'
-  'title': 'NUXTJS V3 SSR MINIMAL'
+  'mgnl:template': 'app-lm:pages/index'
+  'title': 'Home'
+  'footer':
+    'jcr:primaryType': 'mgnl:area'
+    'jcr:uuid': '123a6673-bb24-4cd6-b10f-62f00b256278'
+    'mgnl:created': 2023-02-21T23:38:39.344+01:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2023-02-21T23:38:39.346+01:00
+    'mgnl:lastModifiedBy': 'superuser'
+    '0':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': '2532da4e-4fb4-48d2-91b2-0561f42f67bf'
+      'mgnl:created': 2023-02-21T23:38:39.353+01:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2023-02-21T23:38:39.353+01:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'app-lm:components/footer'
+  'header':
+    'jcr:primaryType': 'mgnl:area'
+    'jcr:uuid': '5c562990-52b6-49ee-b591-1112228275e1'
+    'mgnl:created': 2023-02-21T23:38:47.726+01:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastModified': 2023-03-07T15:53:16.259+01:00
+    'mgnl:lastModifiedBy': 'superuser'
+    '0':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': 'bcf8e1d6-53ab-4603-8391-bcf762ea014e'
+      'logo': 'jcr:74e54461-c281-43a4-b3d0-67130ed3bf4d'
+      'mgnl:created': 2023-02-21T23:38:47.728+01:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2023-03-07T15:53:16.259+01:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'app-lm:components/header'
   'main':
     'jcr:primaryType': 'mgnl:area'
-    'jcr:uuid': 'a4ae7a93-4399-4477-bd8e-f193581617f4'
-    'mgnl:activationStatus': true
-    'mgnl:created': 2022-07-27T09:44:11.490+02:00
+    'jcr:uuid': '3b364434-92cf-446c-a629-e0bd232712b1'
+    'mgnl:created': 2023-02-21T23:38:55.718+01:00
     'mgnl:createdBy': 'superuser'
-    'mgnl:lastActivated': 2022-07-27T10:00:52.829+02:00
-    'mgnl:lastActivatedBy': 'superuser'
-    'mgnl:lastModified': 2022-07-27T09:44:27.828+02:00
+    'mgnl:lastModified': 2023-03-07T14:51:58.701+01:00
     'mgnl:lastModifiedBy': 'superuser'
     '0':
-      'image': 'jcr:090eb9c4-b35b-4869-a12f-6ea80292cba4'
-      'jcr:primaryType': 'mgnl:component'
-      'jcr:uuid': '9bfd4242-c5b9-4712-bfb1-ff52b87250a2'
-      'mgnl:activationStatus': true
-      'mgnl:created': 2022-07-27T09:44:11.491+02:00
-      'mgnl:createdBy': 'superuser'
-      'mgnl:lastActivated': 2022-07-27T10:00:52.829+02:00
-      'mgnl:lastActivatedBy': 'superuser'
-      'mgnl:lastModified': 2022-07-27T09:44:11.491+02:00
-      'mgnl:lastModifiedBy': 'superuser'
-      'mgnl:template': 'app-lm:components/image'
-    '00':
-      'jcr:primaryType': 'mgnl:component'
-      'jcr:uuid': '96f568cd-e808-4183-8a12-871fbb2a5121'
-      'mgnl:activationStatus': true
-      'mgnl:created': 2022-07-27T09:44:34.434+02:00
-      'mgnl:createdBy': 'superuser'
-      'mgnl:lastActivated': 2022-07-27T10:00:52.829+02:00
-      'mgnl:lastActivatedBy': 'superuser'
-      'mgnl:lastModified': 2022-07-27T09:44:34.434+02:00
-      'mgnl:lastModifiedBy': 'superuser'
-      'mgnl:template': 'app-lm:components/paragraph'
-      'richText': '<p>Ahhhhh,&nbsp;<strong><em>springtime</em></strong>.</p>
+      'content': '<p>Fusce pharetra convallis urna. Etiam ultricies nisi vel augue.
+        Maecenas vestibulum mollis diam. Duis lobortis massa imperdiet quam. In ut
+        quam vitae odio lacinia tincidunt.</p>
 
 
-        <p>Throw wide the windows, and let the cool breeze sweep through the apartment
-        and chase away the winter blues.</p>
+        <p>Duis vel nibh at velit scelerisque suscipit. Sed fringilla mauris sit amet
+        nibh. Nam eget dui. Aenean imperdiet. Phasellus gravida semper nisi.</p>
 
         '
-  'extras':
-    'jcr:primaryType': 'mgnl:area'
-    'jcr:uuid': 'bae4bef2-afbc-4545-90c2-6ee84ffaf822'
-    'mgnl:activationStatus': true
-    'mgnl:created': 2022-07-27T09:44:44.006+02:00
-    'mgnl:createdBy': 'superuser'
-    'mgnl:lastActivated': 2022-07-27T10:00:52.829+02:00
-    'mgnl:lastActivatedBy': 'superuser'
-    'mgnl:lastModified': 2022-07-27T09:45:21.956+02:00
-    'mgnl:lastModifiedBy': 'superuser'
-    '0':
+      'headline': 'Nulla neque dolor'
+      'image': 'jcr:4a6c6832-f295-4d7d-9aff-3e532cbaae88'
       'jcr:primaryType': 'mgnl:component'
-      'jcr:uuid': '5308db66-f726-4e8a-93a2-ea0b11644373'
-      'mgnl:activationStatus': true
-      'mgnl:created': 2022-07-27T09:44:44.007+02:00
+      'jcr:uuid': 'ce2df6d5-d34b-4449-b36a-0508099b3143'
+      'layout': 'hero'
+      'mgnl:created': 2023-02-22T00:01:24.212+01:00
       'mgnl:createdBy': 'superuser'
-      'mgnl:lastActivated': 2022-07-27T10:00:52.830+02:00
-      'mgnl:lastActivatedBy': 'superuser'
-      'mgnl:lastModified': 2022-07-27T09:44:44.007+02:00
+      'mgnl:lastModified': 2023-03-07T14:51:58.701+01:00
       'mgnl:lastModifiedBy': 'superuser'
-      'mgnl:template': 'app-lm:components/headline'
-      'text': 'Spring Essentials'
+      'mgnl:template': 'app-lm:components/cover'
     '00':
       'jcr:primaryType': 'mgnl:component'
-      'jcr:uuid': 'ab69f665-8881-4483-8d73-214efa0fe6ed'
-      'mgnl:activationStatus': true
-      'mgnl:created': 2022-07-27T09:44:50.696+02:00
+      'jcr:uuid': 'ea86ae9f-32c8-4dc1-829d-c4baf9d2b8ae'
+      'mgnl:created': 2023-02-22T14:03:32.071+01:00
       'mgnl:createdBy': 'superuser'
-      'mgnl:lastActivated': 2022-07-27T10:00:52.830+02:00
-      'mgnl:lastActivatedBy': 'superuser'
-      'mgnl:lastModified': 2022-07-27T09:45:13.447+02:00
+      'mgnl:lastModified': 2023-03-07T14:20:56.117+01:00
       'mgnl:lastModifiedBy': 'superuser'
-      'mgnl:template': 'app-lm:components/list'
-      'items':
-        'jcr:primaryType': 'mgnl:area'
-        'jcr:uuid': '2e881055-ddd8-46cc-80c6-dc50de4a9ac3'
-        'mgnl:activationStatus': true
-        'mgnl:created': 2022-07-27T09:44:59.826+02:00
+      'mgnl:template': 'app-lm:components/text-and-image'
+      'orientation': 'left'
+      'layout':
+        'field': 'two-column'
+        'jcr:uuid': '004ac8a1-3818-45dc-8f10-8107da6e139f'
+        'mgnl:created': 2023-02-22T14:03:32.074+01:00
         'mgnl:createdBy': 'superuser'
-        'mgnl:lastActivated': 2022-07-27T10:00:52.830+02:00
-        'mgnl:lastActivatedBy': 'superuser'
-        'mgnl:lastModified': 2022-07-27T09:45:13.447+02:00
+        'mgnl:lastModified': 2023-02-22T14:15:59.083+01:00
         'mgnl:lastModifiedBy': 'superuser'
-        '0':
-          'jcr:primaryType': 'mgnl:component'
-          'jcr:uuid': 'f7c50e69-fc37-4809-ab58-1588f2733270'
-          'mgnl:activationStatus': true
-          'mgnl:created': 2022-07-27T09:44:59.826+02:00
-          'mgnl:createdBy': 'superuser'
-          'mgnl:lastActivated': 2022-07-27T10:00:52.830+02:00
-          'mgnl:lastActivatedBy': 'superuser'
-          'mgnl:lastModified': 2022-07-27T09:44:59.826+02:00
-          'mgnl:lastModifiedBy': 'superuser'
-          'mgnl:template': 'app-lm:components/listItem'
-          'text': 'Put ski''s in storage'
-        '00':
-          'jcr:primaryType': 'mgnl:component'
-          'jcr:uuid': 'cc6752af-a200-47b1-a60c-3440c14dc108'
-          'mgnl:activationStatus': true
-          'mgnl:created': 2022-07-27T09:45:07.229+02:00
-          'mgnl:createdBy': 'superuser'
-          'mgnl:lastActivated': 2022-07-27T10:00:52.830+02:00
-          'mgnl:lastActivatedBy': 'superuser'
-          'mgnl:lastModified': 2022-07-27T09:45:07.229+02:00
-          'mgnl:lastModifiedBy': 'superuser'
-          'mgnl:template': 'app-lm:components/listItem'
-          'text': 'Get grill on balcony'
-        '01':
-          'jcr:primaryType': 'mgnl:component'
-          'jcr:uuid': '80c124ba-9a2b-4a77-bf32-3b9c3f9992d8'
-          'mgnl:activationStatus': true
-          'mgnl:created': 2022-07-27T09:45:15.341+02:00
-          'mgnl:createdBy': 'superuser'
-          'mgnl:lastActivated': 2022-07-27T10:00:52.830+02:00
-          'mgnl:lastActivatedBy': 'superuser'
-          'mgnl:lastModified': 2022-07-27T09:45:15.342+02:00
-          'mgnl:lastModifiedBy': 'superuser'
-          'mgnl:template': 'app-lm:components/listItem'
-          'text': 'Buy beer'
-    '01':
-      'jcr:primaryType': 'mgnl:component'
-      'jcr:uuid': '08600582-3975-45ac-93df-72e0a2dd7740'
-      'mgnl:activationStatus': true
-      'mgnl:created': 2022-07-27T09:45:24.689+02:00
-      'mgnl:createdBy': 'superuser'
-      'mgnl:lastActivated': 2022-07-27T10:00:52.831+02:00
-      'mgnl:lastActivatedBy': 'superuser'
-      'mgnl:lastModified': 2022-07-27T09:45:24.689+02:00
-      'mgnl:lastModifiedBy': 'superuser'
-      'mgnl:template': 'app-lm:components/paragraph'
-      'richText': '<p>It&#39;s all about&nbsp;<em>priorities</em>.</p>
-
-        '
-  'contact':
-    'jcr:mixinTypes': ['mgnl:hasVersion']
+        'orientation': 'right'
+  'about':
     'jcr:primaryType': 'mgnl:page'
-    'jcr:uuid': '691bdc7d-3a6c-4161-a85f-645b5b53f84e'
-    'mgnl:activationStatus': true
-    'mgnl:created': 2022-07-27T09:46:00.291+02:00
+    'jcr:uuid': '12206b6b-1b7c-475c-8571-33838558d13a'
+    'mgnl:created': 2023-02-22T00:05:20.376+01:00
     'mgnl:createdBy': 'superuser'
-    'mgnl:lastActivated': 2022-07-27T10:00:53.055+02:00
-    'mgnl:lastActivatedBy': 'superuser'
-    'mgnl:lastActivatedVersion': '1.2'
-    'mgnl:lastActivatedVersionCreated': 2022-07-27T10:00:42.375+02:00
-    'mgnl:lastModified': 2022-07-27T10:00:36.814+02:00
+    'mgnl:lastModified': 2023-03-08T10:49:24.974+01:00
     'mgnl:lastModifiedBy': 'superuser'
-    'mgnl:template': 'app-lm:pages/contact'
-    'title': 'Contact'
+    'mgnl:template': 'app-lm:pages/basic'
+    'title': 'About'
     'main':
       'jcr:primaryType': 'mgnl:area'
-      'jcr:uuid': 'e048b5d5-fddb-419f-9405-0e6d102d4bcf'
-      'mgnl:activationStatus': true
-      'mgnl:created': 2022-07-27T09:47:59.682+02:00
+      'jcr:uuid': '3ce2fda6-7ef1-4f13-9f9b-15d6618ecd43'
+      'mgnl:created': 2023-02-22T13:18:13.901+01:00
       'mgnl:createdBy': 'superuser'
-      'mgnl:lastActivated': 2022-07-27T10:00:53.056+02:00
-      'mgnl:lastActivatedBy': 'superuser'
-      'mgnl:lastModified': 2022-07-27T09:52:45.334+02:00
+      'mgnl:lastModified': 2023-03-08T10:49:24.974+01:00
       'mgnl:lastModifiedBy': 'superuser'
       '0':
-        'jcr:primaryType': 'mgnl:component'
-        'jcr:uuid': 'a2a547c3-ee3e-4f03-8f4a-502f58c14d2d'
-        'mgnl:activationStatus': true
-        'mgnl:created': 2022-07-27T09:47:59.683+02:00
-        'mgnl:createdBy': 'superuser'
-        'mgnl:lastActivated': 2022-07-27T10:00:53.056+02:00
-        'mgnl:lastActivatedBy': 'superuser'
-        'mgnl:lastModified': 2022-07-27T09:47:59.683+02:00
-        'mgnl:lastModifiedBy': 'superuser'
-        'mgnl:template': 'app-lm:components/paragraph'
-        'richText': '<p><strong>Contact Sales</strong></p>
+        'content': '<p>Praesent congue erat at massa. Vivamus euismod mauris. Vestibulum
+          purus quam, scelerisque ut, mollis sed, nonummy id, metus. Suspendisse faucibus,
+          nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis
+          lacus elit id tortor. Ut leo.</p>
+
+
+          <p>Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Fusce
+          vel dui. Duis lobortis massa imperdiet quam. Nam at tortor in tellus interdum
+          sagittis. Vivamus quis mi.</p>
 
           '
-      '00':
+        'headline': 'Nullam accumsan lorem'
         'jcr:primaryType': 'mgnl:component'
-        'jcr:uuid': 'e0296591-1c16-43c0-9029-5b53994a1b54'
-        'mgnl:activationStatus': true
-        'mgnl:created': 2022-07-27T09:48:05.061+02:00
+        'jcr:uuid': 'c1ba918e-50dc-4ace-a188-f5313c2692db'
+        'layout': 'page'
+        'mgnl:created': 2023-02-22T13:18:13.903+01:00
         'mgnl:createdBy': 'superuser'
-        'mgnl:lastActivated': 2022-07-27T10:00:53.056+02:00
-        'mgnl:lastActivatedBy': 'superuser'
-        'mgnl:lastModified': 2022-07-27T09:52:15.425+02:00
+        'mgnl:lastModified': 2023-03-08T10:49:24.974+01:00
         'mgnl:lastModifiedBy': 'superuser'
-        'mgnl:template': 'app-lm:components/expander'
-        'expanderItems':
-          'jcr:primaryType': 'mgnl:area'
-          'jcr:uuid': '9ea32a4e-6337-4d73-9451-2beb9f6bb66f'
-          'mgnl:activationStatus': true
-          'mgnl:created': 2022-07-27T09:52:22.995+02:00
-          'mgnl:createdBy': 'superuser'
-          'mgnl:lastActivated': 2022-07-27T10:00:53.056+02:00
-          'mgnl:lastActivatedBy': 'superuser'
-          'mgnl:lastModified': 2022-07-27T09:52:22.995+02:00
-          'mgnl:lastModifiedBy': 'superuser'
-          '0':
-            'jcr:primaryType': 'mgnl:component'
-            'jcr:uuid': 'cfc29265-7aa0-4949-a6b5-436abff46519'
-            'mgnl:activationStatus': true
-            'mgnl:created': 2022-07-27T09:52:22.995+02:00
-            'mgnl:createdBy': 'superuser'
-            'mgnl:lastActivated': 2022-07-27T10:00:53.056+02:00
-            'mgnl:lastActivatedBy': 'superuser'
-            'mgnl:lastModified': 2022-07-27T09:52:22.996+02:00
-            'mgnl:lastModifiedBy': 'superuser'
-            'mgnl:template': 'app-lm:components/paragraph'
-            'richText': '<p>Reach out to us anytime, 24/7. Really. Go ahead, just
-              call us!&nbsp;<em>Please?</em></p>
-
-
-              <p>sales@minimal-spa-demo.com</p>
-
-
-              <p>+41 12 34 567 89 00</p>
-
-              '
-      '01':
-        'jcr:primaryType': 'mgnl:component'
-        'jcr:uuid': '918f3dba-2338-48d6-9134-2cbfff215242'
-        'mgnl:activationStatus': true
-        'mgnl:created': 2022-07-27T09:52:35.223+02:00
-        'mgnl:createdBy': 'superuser'
-        'mgnl:lastActivated': 2022-07-27T10:00:53.056+02:00
-        'mgnl:lastActivatedBy': 'superuser'
-        'mgnl:lastModified': 2022-07-27T09:52:35.223+02:00
-        'mgnl:lastModifiedBy': 'superuser'
-        'mgnl:template': 'app-lm:components/paragraph'
-        'richText': '<p><strong>Contact Support</strong></p>
-
-          '
-      '02':
-        'jcr:primaryType': 'mgnl:component'
-        'jcr:uuid': 'fec4dcc3-7bfa-4f85-b2b0-590a2518e58c'
-        'mgnl:activationStatus': true
-        'mgnl:created': 2022-07-27T09:52:38.505+02:00
-        'mgnl:createdBy': 'superuser'
-        'mgnl:lastActivated': 2022-07-27T10:00:53.057+02:00
-        'mgnl:lastActivatedBy': 'superuser'
-        'mgnl:lastModified': 2022-07-27T09:52:45.334+02:00
-        'mgnl:lastModifiedBy': 'superuser'
-        'mgnl:template': 'app-lm:components/expander'
-        'expanderItems':
-          'jcr:primaryType': 'mgnl:area'
-          'jcr:uuid': '4476e39a-ff07-469a-a1c3-a1c0e5e84536'
-          'mgnl:activationStatus': true
-          'mgnl:created': 2022-07-27T09:52:50.531+02:00
-          'mgnl:createdBy': 'superuser'
-          'mgnl:lastActivated': 2022-07-27T10:00:53.057+02:00
-          'mgnl:lastActivatedBy': 'superuser'
-          'mgnl:lastModified': 2022-07-27T09:52:50.531+02:00
-          'mgnl:lastModifiedBy': 'superuser'
-          '0':
-            'jcr:primaryType': 'mgnl:component'
-            'jcr:uuid': '786b4959-a6c6-46c3-98c0-d3a3e0ce56df'
-            'mgnl:activationStatus': true
-            'mgnl:created': 2022-07-27T09:52:50.532+02:00
-            'mgnl:createdBy': 'superuser'
-            'mgnl:lastActivated': 2022-07-27T10:00:53.060+02:00
-            'mgnl:lastActivatedBy': 'superuser'
-            'mgnl:lastModified': 2022-07-27T09:52:50.532+02:00
-            'mgnl:lastModifiedBy': 'superuser'
-            'mgnl:template': 'app-lm:components/paragraph'
-            'richText': '<p>Available from 3:00 - 3:25. Every 2nd Tuesday of the month.</p>
-
-
-              <p>support@minimal-spa-demo.com</p>
-
-
-              <p>+41 98 765 43 21 00</p>
-
-              '
+        'mgnl:template': 'app-lm:components/cover'
