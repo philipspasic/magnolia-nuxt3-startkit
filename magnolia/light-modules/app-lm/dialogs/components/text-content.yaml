@@ -1,0 +1,17 @@
+label: Text Content
+form:
+  properties:
+    headline:
+      label: Headline
+      $type: textField
+      i18n: true
+    
+    content:
+      label: Content
+      $type: richTextField
+      height: 400
+      alignment: true
+      colors: '2d2e83,42a0f0,f39100,f39100,c31b19,6eb531,333333,ffffff'
+      tables: true
+      source: true
+      i18n: true

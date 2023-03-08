@@ -22,6 +22,8 @@ areas:
         id: app-lm:components/cover
       TextAndImage:
         id: app-lm:components/text-and-image
+      TextContent:
+        id: app-lm:components/text-content
 
   footer:
     title: Footer Area

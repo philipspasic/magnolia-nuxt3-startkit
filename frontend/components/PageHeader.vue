@@ -33,7 +33,8 @@ import { EditorContextHelper } from '@magnolia/vue-editor';
 export default {
   name: "PageHeader",
   props: [
-    "logo"
+    "logo",
+    "button"
   ],
   setup(props) {
     const isMgnl = ref(false);
@@ -42,6 +43,7 @@ export default {
   },
   mounted() {
     this.isMgnl = EditorContextHelper.inIframe();
+    console.log(this.button)
   }
 };
 </script>

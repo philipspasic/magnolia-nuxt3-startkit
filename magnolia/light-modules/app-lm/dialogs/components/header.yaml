@@ -7,3 +7,5 @@ form:
       chooser:
         workbenchChooser:
           appName: dam-chooser
+
+    button: !include:/app-lm/includes/button.yaml
