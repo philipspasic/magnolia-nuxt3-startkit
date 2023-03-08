@@ -7,10 +7,13 @@
         <v-spacer></v-spacer>
 
         <v-btn
-          v-for="icon in icons"
-          :key="icon"
+          v-for="social in socials"
+          :key="social.icon"
           class="mx-3"
-          :icon="icon"
+          :href="social.href"
+          target="_blank"
+          rel="nofollow"
+          :icon="social.icon"
           variant="plain"></v-btn>
       </v-container>
     </div>
@@ -27,11 +30,23 @@
 export default {
   name: "PageFooter",
   data: () => ({
-    icons: [
-      'mdi-facebook',
-      'mdi-twitter',
-      'mdi-linkedin',
-      'mdi-instagram',
+    socials: [
+      {
+        href: "https://www.facebook.com",
+        icon: "mdi-facebook"
+      },
+      {
+        href: "https://www.twitter.com",
+        icon: "mdi-twitter"
+      },
+      {
+        href: "https://www.linkedin.com",
+        icon: "mdi-linkedin"
+      },
+      {
+        href: "https://www.instagram.com",
+        icon: "mdi-instagram"
+      }
     ],
   }),
 };

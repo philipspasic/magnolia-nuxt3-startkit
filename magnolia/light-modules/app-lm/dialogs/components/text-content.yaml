@@ -9,9 +9,10 @@ form:
     content:
       label: Content
       $type: richTextField
-      height: 400
+      height: 600
       alignment: true
       colors: '2d2e83,42a0f0,f39100,f39100,c31b19,6eb531,333333,ffffff'
       tables: true
       source: true
+      configJsFile: /.resources/app-lm/customization/ckeditor/config-magnolia.js
       i18n: true

@@ -1,10 +1,13 @@
 <template>
-  <section class="page-cover">
-    <v-parallax :src="imageUrl"></v-parallax>
-    <v-col lg="6" md="8" class="page-cover__content">
-      <h1 class="text-h2 font-weight-thin mb-5">{{ headline }}</h1>
-      <div class="text-body-1" v-html="content"></div>
-    </v-col>
+  <section class="page-cover" :class="{'page-cover--page' : layout === 'page', 'page-cover--hero' : layout === 'hero'}">
+    <v-img cover v-if="layout === 'page'" :src="imageUrl"></v-img>
+    <v-parallax v-if="layout === 'hero'" :src="imageUrl"></v-parallax>
+    <v-container class="d-flex h-100">
+      <v-col lg="6" md="8" class="page-cover__content">
+        <h1 class="text-lg-h2 text-h3 font-weight-thin" :class="{'mb-5' : content}">{{ headline }}</h1>
+        <div v-if="content" class="text-body-1" v-html="content"></div>
+      </v-col>
+    </v-container>
   </section>
 </template>
 
@@ -30,17 +33,12 @@ export default {
 .page-cover {
   position: relative;
   background-color: rgba(black, .2);
-  text-align: center;
   color: white;
-  height: 100vh;
   z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+  height: 60vh;
   overflow: hidden;
 
-  .v-parallax {
+  .v-parallax, .v-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -67,6 +65,23 @@ export default {
 
     p:not(:last-child) {
       margin-bottom: 1em;
+    }
+  }
+
+  &--page {
+    .v-container {
+      align-items: end;
+      padding-bottom: 48px;
+    }
+  }
+
+  &--hero {
+    height: 100vh;
+    text-align: center;
+
+    .v-container {
+      align-items: center;
+      justify-content: center;
     }
   }
 }

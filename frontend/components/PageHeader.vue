@@ -8,7 +8,7 @@
           </nuxt-link>
         </v-col>
         <v-col cols="auto" class="page-header__center">
-          <nav class="nav">
+          <nav class="nav text-body-1">
             <ul>
               <li>
                 <nuxt-link to="/">Home</nuxt-link>
@@ -20,7 +20,14 @@
           </nav>
         </v-col>
         <v-col cols="3" class="page-header__end d-flex align-center justify-end">
-          <v-btn variant="outlined" to="/" nuxt>Button</v-btn>
+          <v-btn 
+            v-if="(button.type.field === 'url' && button.type.url) || (button.type.field === 'link' && button.type.link)"
+            variant="outlined" 
+            color="black" 
+            :href="button.type.field === 'url' && button.type.url || ''"
+            :target="button.type.field === 'url' ? '_blank' : ''"
+            :to="button.type.field === 'link' && button.type.link || ''" 
+            :nuxt="button.type.field === 'link'">{{ button.label || 'Button' }}</v-btn>
         </v-col>
       </v-row>
     </v-container>
@@ -56,6 +63,7 @@ export default {
   width: 100%;
   z-index: 10;
   background-color: white;
+  box-shadow: 0 0 17px 2px rgba(0,0,0,0.2);
 
   .v-container {
     padding: 8px 16px;

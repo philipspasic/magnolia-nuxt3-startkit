@@ -1,49 +1,43 @@
-button: 
-  label: Button
-  $type: compositeField
-  itemProvider:
-    $type: jcrChildNodeProvider
-  properties:
-    label:
-      label: Button Label
-      $type: textField
-      i18n: true
+label: Button
+$type: compositeField
+itemProvider:
+  $type: jcrChildNodeProvider
+properties:
+  label:
+    label: Label
+    $type: textField
+    i18n: true
 
-    type:
-      $type: switchableField
-      field:
-        $type: radioButtonGroupField
-        layout: horizontal
-        i18n: true
-        datasource:
-          $type: optionListDatasource
-          options:
-            - name: url
-              label: Url
-              value: url
-            - name: link
-              label: Link
-              value: link
-            - name: anchor
-              label: Anchor
-              value: anchor
-      itemProvider:
-        $type: jcrChildNodeProvider
-      forms:
-        - name: url
-          properties:
-            url:
-              $type: textField
-              i18n: true
-        - name: link
-          properties:
-            link:
-              $type: pageLinkField
-              # textInputAllowed=true and showOptions=true enable filtering (performance issues may occur with a large number of items)
-              showOptions: true
-              textInputAllowed: true
-              converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter # stores the value as a path (the default converter stores a UUID)
-        - name: anchor
-          properties:
-            scrollTo:
-              $type: textField
+  type:
+    $type: switchableField
+    label: Type
+    field:
+      $type: radioButtonGroupField
+      layout: horizontal
+      defaultValue: url
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: url
+            label: Url
+            value: url
+          - name: link
+            label: Link
+            value: link
+    itemProvider:
+      $type: jcrChildNodeProvider
+    forms:
+      - name: url
+        properties:
+          url:
+            $type: textField
+            label: Url
+      - name: link
+        properties:
+          link:
+            $type: pageLinkField
+            # textInputAllowed=true and showOptions=true enable filtering (performance issues may occur with a large number of items)
+            label: Link
+            showOptions: true
+            textInputAllowed: true
+            converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter # stores the value as a path (the default converter stores a UUID)

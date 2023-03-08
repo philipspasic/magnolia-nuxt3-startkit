@@ -24,6 +24,7 @@ form:
     content:
       label: Content
       $type: richTextField
+      configJsFile: /.resources/app-lm/customization/ckeditor/config-magnolia.js
       height: 200
       source: true
       i18n: true
