@@ -1,17 +1,17 @@
 <template>
-  <footer class="footer">
+  <footer class="page-footer">
     <h1>Footer</h1>
   </footer>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: "PageFooter"
 };
 </script>
 
 <style lang="scss">
-.footer {
+.page-footer {
   margin-top: 3rem;
 }
 </style>

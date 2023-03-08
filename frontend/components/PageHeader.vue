@@ -1,19 +1,29 @@
 <template>
-  <header class="header" :class="{'position-relative' : isMgnl}">
-    <v-col lg="3" class="header__left">
-      <img :src="logoUrl" alt="logo">
-    </v-col>
-    <div class="header__middle">
-      <ul>
-        <li>
-          <nuxt-link to="/">Home</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/about">About</nuxt-link>
-        </li>
-      </ul>
-    </div>
-    <v-col lg="3" class="header__right"></v-col>
+  <header class="page-header" :class="{'position-relative' : isMgnl}">
+    <v-container>
+      <v-row justify="space-between" align="center" no-gutters>
+        <v-col cols="3" class="page-header__start">
+          <nuxt-link to="/" class="logo">
+            <img :src="logoUrl" alt="logo">
+          </nuxt-link>
+        </v-col>
+        <v-col cols="auto" class="page-header__center">
+          <nav class="nav">
+            <ul>
+              <li>
+                <nuxt-link to="/">Home</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/about">About</nuxt-link>
+              </li>
+            </ul>
+          </nav>
+        </v-col>
+        <v-col cols="3" class="page-header__end d-flex align-center justify-end">
+          <v-btn variant="outlined" to="/" nuxt>Button</v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
   </header>
 </template>
 
@@ -21,7 +31,7 @@
 import { EditorContextHelper } from '@magnolia/vue-editor';
 
 export default {
-  name: "Header",
+  name: "PageHeader",
   props: [
     "logo"
   ],
@@ -37,25 +47,28 @@ export default {
 </script>
 
 <style lang="scss">
-.header {
+.page-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  padding: .5rem 4rem;
   background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
-  &__left {
+  .v-container {
+    padding: 8px 16px;
+  }
+
+  .logo {
+    display: inline-block;
+
     img {
-      max-height: 4rem;
+      display: block;
+      max-height: 3.5rem;
     }
   }
 
-  &__middle {
+  .nav {
     ul {
       list-style-type: none !important;
       display: flex;

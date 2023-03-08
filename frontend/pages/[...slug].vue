@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <EditablePage
-      v-if="content"
-      :content="content"
-      :config="config"
-      :templateAnnotations="templateAnnotations"
-    />
-  </div>
+  <EditablePage
+    v-if="content"
+    :content="content"
+    :config="config"
+    :templateAnnotations="templateAnnotations"
+  />
 </template>
 
 <script>
@@ -57,7 +55,7 @@ export default {
       content = await useAsyncData(fullPath, async () => {
         // Get header and footer from index page
         if(fullPath !== "/" && !appStore.sharedContent) {
-          const path = nodeName + "/";
+          let path = nodeName + "/";
           if (!isDefaultLanguage) {
             path = path.replace("/" + currentLanguage, "");
           }

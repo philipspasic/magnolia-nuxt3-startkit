@@ -1,12 +1,12 @@
 <template>
   <div>
-    <EditableArea v-if="header || sharedContent.header" :content="header || sharedContent.header" />
+    <EditableArea v-if="header || (sharedContent && sharedContent.header)" :content="header || sharedContent.header" />
 
     <main>
       <EditableArea v-if="main" :content="main" />
     </main>
 
-    <EditableArea v-if="footer || sharedContent.footer" :content="footer || sharedContent.footer" />
+    <EditableArea v-if="footer || (sharedContent && sharedContent.footer)" :content="footer || sharedContent.footer" />
   </div>
 </template>
 
