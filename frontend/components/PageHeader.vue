@@ -21,7 +21,7 @@
         </v-col>
         <v-col cols="3" class="page-header__end d-flex align-center justify-end">
           <v-btn 
-            v-if="(button.type.field === 'url' && button.type.url) || (button.type.field === 'link' && button.type.link)"
+            v-if="button && (button.type.field === 'url' && button.type.url) || (button.type.field === 'link' && button.type.link)"
             variant="outlined" 
             color="black" 
             :href="button.type.field === 'url' && button.type.url || ''"
@@ -36,6 +36,7 @@
 
 <script>
 import { EditorContextHelper } from '@magnolia/vue-editor';
+import { onMounted } from 'vue';
 
 export default {
   name: "PageHeader",
@@ -44,13 +45,14 @@ export default {
     "button"
   ],
   setup(props) {
-    const isMgnl = ref(false);
+    let isMgnl = ref(false);
     const logoUrl = useMgnlImage(props.logo);
+
+    onMounted(() => {
+      isMgnl.value = EditorContextHelper.inIframe();
+    });
+
     return {logoUrl, isMgnl};
-  },
-  mounted() {
-    this.isMgnl = EditorContextHelper.inIframe();
-    console.log(this.button)
   }
 };
 </script>
