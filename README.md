@@ -104,7 +104,6 @@ In your browser, open App at: http://localhost:3000/
 
 ### Manually:
 
-Open the `Pages` app in Magnolia and **_click Add Page_**  and add a `Index` **_template_** and name it `Home`
+Open the `Pages` app in Magnolia and **_click Add Page_**  and add a `Index` **_template_** and name it `Home`. Then add components into the `Header`, `Main` and `Footer` areas of the page.
 
-Then add components into the `Header`, `Main` and `Footer` areas of the page.
-You can also add additional pages as children of that page.
+You can also add additional pages as children of that page with `Basic` **_template_** which will inherit the `Header` and `Footer` areas from `Index` page.
