@@ -77,22 +77,6 @@ Open the Security app, open the `Roles` tab, edit the `rest-anonymous` role, go 
 
 In `Access control lists` tab modify `Dam` workspace by allowing `Read-only` access to `Selected and sub nodes` to `/`.
 
-# Create Sample Content
-
-**_Either_** import some content, or create it manually.
-
-### Import:
-
-**_In the Pages app_**, Use the 'Import' action (with nothing selected) and select the website.app.yaml file from `/magnolia/_dev/content-to-import/`.
-**_In the Assets app_**, Use the 'Import' action (with nothing selected) and select the dam.app.xml file from `/magnolia/_dev/content-to-import/`.
-
-### Manually:
-
-Open the `Pages` app in Magnolia and **_click Add Page_**  and add a `Index` **_template_** and name it `Home`
-
-Then add components into the `Header`, `Main` and `Footer` areas of the page.
-You can also add additional pages as children of that page.
-
 ## Start App
 From root folder start App with:
 
@@ -107,3 +91,20 @@ npm run dev
 ```
 
 In your browser, open App at: http://localhost:3000/
+
+# Create Sample Content
+
+**_Either_** import some content, or create it manually.
+
+### Import:
+
+**_In the Pages app_**, Use the 'Import' action (with nothing selected) and select the website.app.yaml file from `/magnolia/_dev/content-to-import/`.
+
+**_In the Assets app_**, Use the 'Import' action (with nothing selected) and select the dam.app.xml file from `/magnolia/_dev/content-to-import/`.
+
+### Manually:
+
+Open the `Pages` app in Magnolia and **_click Add Page_**  and add a `Index` **_template_** and name it `Home`
+
+Then add components into the `Header`, `Main` and `Footer` areas of the page.
+You can also add additional pages as children of that page.
